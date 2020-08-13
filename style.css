@@ -46,6 +46,10 @@ body p {
     .linknum {
         visibility: visible !important;
     }
+
+    .about-header .about-images {
+        max-width: 400px !important;
+    }
 }
 
 @media (max-width: 1240px) {
