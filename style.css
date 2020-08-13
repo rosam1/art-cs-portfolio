@@ -29,6 +29,28 @@ body p {
 }
 
 @media (max-width: 600px) {
+    .container {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .gallery-page .gallery-sections {
+        padding: 25px !important;
+    }
+
+    .site-nav {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 45px;
+    }
+
+    .site-nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
     .linktext {
         display: none;
     }
@@ -48,7 +70,7 @@ body p {
     }
 
     .about-header .about-images {
-        max-width: 400px !important;
+        max-width: 450px !important;
     }
 }
 
