@@ -29,14 +29,35 @@ body p {
 }
 
 @media (max-width: 600px) {
-    .gallery-page .linktext {
+    .linktext {
         display: none;
     }
 
     .nav-pills .nav-link {
-        background-color: rgba(0, 0, 0, .15);
         margin-bottom: 10px;
     }
+
+    .linknum span {
+        display: inline !important;
+        width: 12px !important;
+        height: 22px !important;
+    }
+
+    .linknum {
+        visibility: visible !important;
+    }
+}
+
+@media (max-width: 1240px) {
+    .about-header {
+        flex-direction: column;
+    }
+
+    .about-header .about-images {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
 }
 
 img {
@@ -116,6 +137,16 @@ header {
     box-sizing: border-box;
 }
 
+.linknum span {
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.linknum {
+    visibility: hidden;
+}
+
 .row {
     margin-bottom: 20px;
 }
@@ -135,6 +166,43 @@ header {
 .modal-carousel p {
     background-color: rgba(0, 0, 0, .15);
     padding: 10px;
+}
+
+.about-header {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-header .about-images{
+    max-width: 300px;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-header .abouttext {
+    max-width: 750px;
+}
+
+.card-header {
+    background-color: white;
+}
+
+.card-header:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.btn-link {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: black;
 }
 
 footer {
